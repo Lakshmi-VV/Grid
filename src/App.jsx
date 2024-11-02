@@ -41,6 +41,34 @@ function App() {
         </div>
       </div>
 
+      {/* Features */}
+      <div className="2xl:container w-[100%] mx-auto ">
+        <div
+          className="w-[98%] mx-auto py-[40px] px-[16px]  lg:py-[120px] lg:px-[80px] relative 
+        flex flex-col gap-10 radial-gradient"
+        >
+          <div className="text-center flex flex-col gap-6 items-center ">
+            <span className="text-white bg-[#100F14] px-4 py-2 rounded-[200px] w-fit text-xs md:text-sm">
+              #Features for <span className="font-semibold">Companies</span>
+            </span>
+            <div className="flex flex-col gap-3">
+              <h2 className="text-2xl md:text-5xl font-semibold">Heading </h2>
+              <p className="text !text-[#2c2643]">Description</p>
+            </div>
+            <Icons
+              icon="gradient-hash"
+              className="hidden md:block absolute md:right-[20px] md:top-[10px] lg:right-[59px] lg:top-[91px]"
+            />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:px-10">
+            <div className="bg-white h-[350px] rounded-2xl shadow-[0px_4px_12px_2px_#ECEFF3]"></div>
+            <div className="bg-white h-[350px] rounded-2xl shadow-[0px_4px_12px_2px_#ECEFF3] md:col-span-2"></div>
+            <div className="bg-white h-[350px] rounded-2xl shadow-[0px_4px_12px_2px_#ECEFF3]"></div>
+            <div className="bg-white h-[350px] rounded-2xl shadow-[0px_4px_12px_2px_#ECEFF3]"></div>
+            <div className="bg-white h-[350px] rounded-2xl shadow-[0px_4px_12px_2px_#ECEFF3]"></div>
+          </div>
+        </div>
+      </div>
       <Faq />
       {/* Pricing */}
       <div className="2xl:container w-[100%] mx-auto ">

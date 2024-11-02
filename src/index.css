@@ -21,3 +21,11 @@ h4 {
 .shadow-custom {
   box-shadow: 0px 12px 24px 4px rgba(38, 103, 255, 0.12);
 }
+
+.radial-gradient {
+  background: radial-gradient(
+    53.11% 53.08% at 50% 51.3%,
+    #dfe8ff 0%,
+    #fff 100%
+  );
+}

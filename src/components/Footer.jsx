@@ -43,13 +43,6 @@ function Footer() {
                 </ul>
               </div>
               <div className=" flex flex-col gap-[40px]">
-                <h4>Company</h4>
-                <ul className="flex flex-col gap-[18px]">
-                  <li className="text">About</li>
-                  <li className="text">Contact us</li>
-                </ul>
-              </div>
-              <div className=" flex flex-col gap-[40px]">
                 <h4>Support</h4>
                 <ul className="flex flex-col gap-[18px]">
                   <li className="text">Getting started</li>
@@ -67,7 +60,7 @@ function Footer() {
                       <Icons icon="email" />
                     </div>
 
-                    <span>contact @company .com</span>
+                    <span>contact@company.com</span>
                   </li>
 
                   <li className="text flex gap-[6px] items-center">
