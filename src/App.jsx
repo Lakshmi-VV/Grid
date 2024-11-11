@@ -143,7 +143,7 @@ function App() {
               <div></div>
 
               <div>
-                <div className="flex flex-col gap-3 w-[302px] sticky top-[70px]">
+                <div className="flex flex-col gap-3 max-w-[302px] sticky top-[70px]">
                   {featuresCareer.map((feature) => {
                     return (
                       <>
@@ -165,11 +165,11 @@ function App() {
                             {feature.heading}
                           </span>
                         </div>
-                        <div className="flex items-center justify-center">
-                          <div className="bg-white h-[400px] w-[698px] rounded-2xl"></div>
+                        <div className="flex items-center justify-center w-full">
+                          <div className="bg-white h-[400px] w-full rounded-2xl"></div>
                         </div>
                         <div className="flex justify-between items-center">
-                          <p className="text-[#414438] text-lg font-normal w-[520px]">
+                          <p className="text-[#414438] text-lg font-normal max-w-[520px]">
                             {feature.description}
                           </p>
                           <div className="bg-[#0D0E140D] border border-[#0D0E141A] p-[10px] rounded-full">
