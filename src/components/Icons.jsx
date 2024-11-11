@@ -315,6 +315,236 @@ export const Icons = ({ icon, width, height, style, className, ...props }) => {
           </defs>
         </svg>
       );
+
+    case "right-arrow":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={width || "6px"}
+          height={height || "10px"}
+          className={className}
+          style={style}
+          {...props}
+          viewBox="0 0 6 10"
+          fill="none"
+        >
+          <path
+            d="M1.25 1.25L5 5L1.25 8.75"
+            stroke="white"
+            stroke-width="1.44"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      );
+
+    case "right-arrow-blue":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={width || "6px"}
+          height={height || "10px"}
+          className={className}
+          style={style}
+          {...props}
+          viewBox="0 0 6 10"
+          fill="none"
+        >
+          <path
+            d="M1 1.25L4.75 5L1 8.75"
+            stroke="#0400D1"
+            stroke-width="1.44"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      );
+
+    case "menu-icon":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={width || "17px"}
+          height={height || "12px"}
+          className={className}
+          style={style}
+          {...props}
+          viewBox="0 0 17 12"
+          fill="none"
+        >
+          <path
+            d="M1 1H16M1 5.66667H16M1 11H16"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      );
+
+    case "close-icon":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={width || "24px"}
+          height={height || "24px"}
+          className={className}
+          style={style}
+          {...props}
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-x"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M18 6l-12 12" />
+          <path d="M6 6l12 12" />
+        </svg>
+      );
+
+    case "reach":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={width || "40px"}
+          height={height || "40px"}
+          className={className}
+          style={style}
+          {...props}
+          viewBox="0 0 40 40"
+          fill="none"
+        >
+          <path
+            d="M6.49441 29.9358C6.58976 29.5849 6.37903 29.0969 6.17791 28.7451C6.11528 28.6402 6.04735 28.5386 5.97438 28.4406C4.24944 25.8246 3.33005 22.76 3.33016 19.6265C3.30211 10.6321 10.7604 3.33325 19.9832 3.33325C28.0264 3.33325 34.7403 8.90537 36.3092 16.302C36.5443 17.3986 36.663 18.517 36.6634 19.6385C36.6634 28.6458 29.4928 36.0592 20.27 36.0592C18.8037 36.0592 16.8245 35.6906 15.7452 35.3885C14.6659 35.0865 13.5881 34.6858 13.3101 34.5784C13.0257 34.4691 12.7237 34.4129 12.4191 34.4126C12.0863 34.4113 11.7568 34.4776 11.4503 34.6073L6.01525 36.5688C5.89618 36.6201 5.77001 36.6531 5.64105 36.6666C5.53928 36.6663 5.43859 36.6458 5.3448 36.6063C5.25102 36.5668 5.166 36.5091 5.09468 36.4365C5.02335 36.3639 4.96714 36.2779 4.9293 36.1834C4.89146 36.0889 4.87274 35.9879 4.87422 35.8861C4.88091 35.7968 4.89702 35.7084 4.9223 35.6225L6.49441 29.9358Z"
+            fill="#0400D1"
+          />
+        </svg>
+      );
+
+    case "check":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={width || "40px"}
+          height={height || "40px"}
+          className={className}
+          style={style}
+          {...props}
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M8.603 3.799C9.02496 3.31223 9.54673 2.92196 10.1329 2.65468C10.719 2.38741 11.3558 2.24939 12 2.25C13.357 2.25 14.573 2.85 15.397 3.799C16.0397 3.75311 16.6847 3.84609 17.2883 4.07161C17.8919 4.29713 18.4399 4.64992 18.895 5.106C19.3509 5.56106 19.7036 6.10888 19.9291 6.71226C20.1546 7.31564 20.2477 7.96047 20.202 8.603C20.6886 9.02505 21.0787 9.54686 21.3458 10.133C21.6129 10.7191 21.7507 11.3559 21.75 12C21.7506 12.6442 21.6126 13.281 21.3453 13.8671C21.078 14.4533 20.6878 14.975 20.201 15.397C20.2467 16.0395 20.1536 16.6844 19.9281 17.2877C19.7026 17.8911 19.3499 18.4389 18.894 18.894C18.4389 19.3499 17.8911 19.7026 17.2877 19.9281C16.6844 20.1536 16.0395 20.2467 15.397 20.201C14.975 20.6878 14.4533 21.078 13.8671 21.3453C13.281 21.6126 12.6442 21.7506 12 21.75C11.3558 21.7506 10.719 21.6126 10.1329 21.3453C9.54673 21.078 9.02496 20.6878 8.603 20.201C7.96038 20.247 7.31538 20.1542 6.71181 19.9289C6.10824 19.7035 5.56023 19.3509 5.105 18.895C4.64897 18.4398 4.29622 17.8919 4.0707 17.2883C3.84518 16.6847 3.75218 16.0397 3.798 15.397C3.31141 14.9749 2.92133 14.4531 2.65423 13.867C2.38713 13.2809 2.24927 12.6441 2.25 12C2.25 10.643 2.85 9.427 3.799 8.603C3.75326 7.96047 3.8463 7.31562 4.07182 6.71222C4.29734 6.10883 4.65005 5.56103 5.106 5.106C5.56103 4.65005 6.10883 4.29734 6.71222 4.07182C7.31562 3.8463 7.96047 3.75326 8.603 3.799ZM15.61 10.186C15.67 10.1061 15.7134 10.0149 15.7377 9.91795C15.762 9.82098 15.7666 9.72014 15.7514 9.62136C15.7361 9.52257 15.7013 9.42783 15.6489 9.3427C15.5965 9.25757 15.5276 9.18378 15.4463 9.12565C15.3649 9.06753 15.2728 9.02624 15.1753 9.00423C15.0778 8.98222 14.9769 8.97992 14.8785 8.99746C14.7801 9.01501 14.6862 9.05205 14.6023 9.10641C14.5184 9.16077 14.4462 9.23135 14.39 9.314L11.154 13.844L9.53 12.22C9.38783 12.0875 9.19978 12.0154 9.00548 12.0188C8.81118 12.0223 8.62579 12.101 8.48838 12.2384C8.35097 12.3758 8.27226 12.5612 8.26883 12.7555C8.2654 12.9498 8.33752 13.1378 8.47 13.28L10.72 15.53C10.797 15.6069 10.8898 15.6662 10.992 15.7036C11.0942 15.7411 11.2033 15.7559 11.3118 15.7469C11.4202 15.738 11.5255 15.7055 11.6201 15.6519C11.7148 15.5982 11.7967 15.5245 11.86 15.436L15.61 10.186Z"
+            fill="#0400D1"
+          />
+        </svg>
+      );
+
+    case "wall":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={width || "40px"}
+          height={height || "40px"}
+          className={className}
+          style={style}
+          {...props}
+          viewBox="0 0 28 29"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_35_80652)" filter="url(#filter0_d_35_80652)">
+            <path
+              d="M14.75 8.98438H23.75V5.46875C23.75 5.26155 23.671 5.06284 23.5303 4.91633C23.3897 4.76981 23.1989 4.6875 23 4.6875H14.75V8.98438Z"
+              fill="#0400D1"
+            />
+            <path
+              d="M23.75 10.5469H19.25V14.8438H23.75V10.5469Z"
+              fill="#0400D1"
+            />
+            <path
+              d="M17.75 10.5469H10.25V14.8438H17.75V10.5469Z"
+              fill="#0400D1"
+            />
+            <path d="M8.75 10.5469H4.25V14.8438H8.75V10.5469Z" fill="#0400D1" />
+            <path
+              d="M14.75 16.4062V20.3125H23C23.1989 20.3125 23.3897 20.2302 23.5303 20.0837C23.671 19.9372 23.75 19.7385 23.75 19.5312V16.4062H14.75ZM13.25 8.98438V4.6875H5C4.80109 4.6875 4.61032 4.76981 4.46967 4.91633C4.32902 5.06284 4.25 5.26155 4.25 5.46875V8.98438H13.25ZM13.25 16.4062H4.25V19.5312C4.25 19.7385 4.32902 19.9372 4.46967 20.0837C4.61032 20.2302 4.80109 20.3125 5 20.3125H13.25V16.4062Z"
+              fill="#0400D1"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_d_35_80652"
+              x="-2"
+              y="0"
+              width="32"
+              height="33"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feOffset dy="4" />
+              <feGaussianBlur stdDeviation="2" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_35_80652"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_35_80652"
+                result="shape"
+              />
+            </filter>
+            <clipPath id="clip0_35_80652">
+              <rect
+                width="24"
+                height="25"
+                fill="white"
+                transform="translate(2)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+      );
+
+    case "cross-arrow":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={width || "18px"}
+          height={height || "20px"}
+          className={className}
+          style={style}
+          {...props}
+          viewBox="0 0 18 20"
+          fill="none"
+        >
+          <path
+            d="M4.3457 14.6721L13.3457 5.67212M13.3457 5.67212H6.0327M13.3457 5.67212V12.9841"
+            stroke="#0D0E14"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      );
     default:
       return null;
   }
